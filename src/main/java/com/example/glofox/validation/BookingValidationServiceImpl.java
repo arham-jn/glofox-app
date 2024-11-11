@@ -10,9 +10,10 @@ import com.example.glofox.dto.BookingDTO;
 @Component
 public class BookingValidationServiceImpl implements IBookingValidationService {
 	
-	List<String> validationErrors = new ArrayList<String>();
 	@Override
 	public List<String> validate(BookingDTO bookingDto) {
+		List<String> validationErrors = new ArrayList<String>();
+		
 		if(bookingDto.getMemberName()==null || bookingDto.getMemberName().isEmpty())
 			validationErrors.add("Please enter member name.");
 		if(bookingDto.getBookingDate()==null)

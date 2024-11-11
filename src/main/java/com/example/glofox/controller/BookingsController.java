@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -35,7 +36,7 @@ public class BookingsController {
 	}
 	
 	@PostMapping
-	public ResponseEntity<Object> createBooking(BookingDTO bookingDto) {
+	public ResponseEntity<Object> createBooking(@RequestBody BookingDTO bookingDto) {
 		//Moving validation logic to the service layer
 		List<String> validationErrors = bookingServiceObj.validateBooking(bookingDto);
 		
