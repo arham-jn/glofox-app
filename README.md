@@ -2,6 +2,37 @@
 
 This is a simple booking system API for managing class bookings.
 
+## Getting Started
+
+Follow these instructions to set up the project on your local machine.
+
+### Prerequisites
+
+1. Make sure you have Git installed.
+2. Install Java Development Kit (JDK) version 17 (or the required version).
+3. Install any other dependencies or tools, as specified.
+
+### Clone the Repository
+
+1. Open a terminal or command prompt.
+2. Run the following command to clone the repository:
+
+	git clone https://github.com/arham-jn/glofox-app.git
+   
+3. Navigate to the project directory:
+
+	cd glofox-app
+	
+### Testing the APIs
+You can use Postman or any other API testing tool to interact with the endpoints. For example:
+
+	POST /classes: Adds a new class
+
+	POST /bookings: Creates a new booking
+
+### Troubleshooting
+If the application doesn't start due to port issues, ensure no other process is using port 8081. You can modify the port in the application.properties if needed.
+
 ## Features
 - Create a booking.
 - Validate booking inputs.
